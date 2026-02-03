@@ -18,9 +18,9 @@ export default async function Header() {
               className='flex items-center header-button font-extrabold text-2xl m-1 '
             >
               <Image
-                src='/public/icons/logo.svg'
-                width={40}
-                height={40}
+                src='/icons/logo.svg'
+                width={60}
+                height={50}
                 alt={`${APP_NAME} logo`}
               />
               {APP_NAME}
@@ -37,7 +37,7 @@ export default async function Header() {
         </div>
     </div>
     <div className="flex items-center px-3 mb-[1px] bg-gray-8000">
-        <Button variant="ghost" className="header-button flex items-center gap-1 text-base [&_svg]:size-6">
+        <Button variant="ghost" className="dark header-button flex items-center gap-1 text-base [&_svg]:size-6">
             <MenuIcon />
             All
         </Button>
