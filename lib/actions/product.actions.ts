@@ -57,9 +57,9 @@ export async function getProductBySlug(slug: string) {
      const product = await Product.findOne({ slug, isPublished: true })
      if (!product) throw new Error('Product not found')
      return JSON.parse(JSON.stringify(product)) as IProduct
-   }
+}
    // GET RELATED PRODUCTS: PRODUCTS WITH SAME CATEGORY
-   export async function getRelatedProductsByCategory({
+export async function getRelatedProductsByCategory({
      category,
      productId,
      limit = PAGE_SIZE,
@@ -86,4 +86,4 @@ export async function getProductBySlug(slug: string) {
        data: JSON.parse(JSON.stringify(products)) as IProduct[],
        totalPages: Math.ceil(productsCount / limit),
      }
-   }
+}
