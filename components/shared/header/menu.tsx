@@ -1,4 +1,4 @@
-import { ShoppingCartIcon} from "lucide-react";
+
 import Link from 'next/link'
     import CartButton from './cart-button'
 export default function Menu(){
