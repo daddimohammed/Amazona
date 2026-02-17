@@ -17,7 +17,7 @@ const users: IUserInput[] = [
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
-    emailVerified: false,
+    emailVerified: true,
   },
   {
     name: 'Jane',
